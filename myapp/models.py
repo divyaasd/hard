@@ -16,3 +16,4 @@ class BlogPost(models.Model):
         return reverse('blogpost_detail', kwargs={'pk': self.pk})
 class Empty(models.Model):
     name=models.CharField(max_length=100)
+    age=models.IntegerField()
